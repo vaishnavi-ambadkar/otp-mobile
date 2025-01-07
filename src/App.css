@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #ffe4e6; /* Light pink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-title {
+  font-size: 2rem;
+  color: #d61f40; /* Strong pink */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.app-title span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.auth-container {
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.icon-container {
+  background-color: #ffccd5; /* Soft pink */
+  color: #d61f40; /* Strong pink */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.phone-label,
+.otp-label {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.submit-button {
+  background-color: #d61f40;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #b01735;
+}
+
+.spinner {
+  margin-right: 0.5rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
